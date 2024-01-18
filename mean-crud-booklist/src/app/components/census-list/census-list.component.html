@@ -18,22 +18,22 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let census of Census; let i = index">
-            <th scope="row">{{census._id}}</th>
-            <td>{{census.totalPeopleInHome}}</td>
-            <td>{{census.streetName}}</td>
-            <td>{{census.cityName}}</td>
-            <td>{{census.stateName}}</td>
-            <td>{{census.zipCode}}</td>
-            <td>{{census.censusYear}}</td>
-            <td>{{census.censusTakerName}}</td>
+          <tr *ngFor="let cens of Census; let i = index">
+            <th scope="row">{{cens._id}}</th>
+            <td>{{cens.totalPeopleInHome}}</td>
+            <td>{{cens.streetName}}</td>
+            <td>{{cens.cityName}}</td>
+            <td>{{cens.stateName}}</td>
+            <td>{{cens.zipCode}}</td>
+            <td>{{cens.cens.usYear}}</td>
+            <td>{{cens.cens.usTakerName}}</td>
             <td class ="text-center">
               <button class="btn btn-sm btn-warning"
-              (click)="onUpdate(census._id)">Update</button>
+              (click)="onUpdate(cens._id)">Update</button>
             </td>
             <td class="text-center">
               <button class="btn btn-sm btn-primary"
-              (click)="onDelete(census._id)">Delete
+              (click)="onDelete(cens._id)">Delete
               </button>
             </td>
           </tr>

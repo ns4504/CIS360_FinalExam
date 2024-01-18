@@ -11,7 +11,7 @@ let CensusSchema = new Schema({
     censusTakerName: { type: String },
     updated_date: { type: Date, default: Date.now }
 }, {
-    collection: 'books'
+    collection: 'cens'
 });
 
 module.exports = mongoose.model('Census', CensusSchema);
