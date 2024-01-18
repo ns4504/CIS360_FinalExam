@@ -1,0 +1,31 @@
+[{
+    "_id": {
+      "$oid": "6118fdf7dda011305494474a"
+    },
+    "totalPeopleInHome": "3",
+    "streetName": "Willow Street",
+    "cityName": "Portland",
+    "stateName": "Oregon",
+    "zipCode": "25578",
+    "censusYear": "2017",
+    "censusTakerName": "John Flair",
+    "updated_date": {
+      "$date": "2021-08-15T11:43:51.066Z"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6118fdf7dda011305494474b"
+    },
+    "totalPeopleInHome": "2",
+    "streetName": "Jay Lane",
+    "cityName": "Portsmouth",
+    "stateName": "Virignia",
+    "zipCode": "23321",
+    "censusYear": "2017",
+    "censusTakerName": "Mirriam Wellies",
+    "updated_date": {
+      "$date": "2021-08-15T11:43:51.066Z"
+    },
+    "__v": 0
+  }]

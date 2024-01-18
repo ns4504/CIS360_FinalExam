@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h2 class="h2">Census List</h2>
+    </div>
+   
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col"># of People</th>
+            <th scope="col">Street</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Zip Code</th>
+            <th scope="col">Census Year</th>
+            <th scope="col">Census Taker</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let census of Census; let i = index">
+            <th scope="row">{{census._id}}</th>
+            <td>{{census.totalPeopleInHome}}</td>
+            <td>{{census.streetName}}</td>
+            <td>{{census.cityName}}</td>
+            <td>{{census.stateName}}</td>
+            <td>{{census.zipCode}}</td>
+            <td>{{census.censusYear}}</td>
+            <td>{{census.censusTakerName}}</td>
+            <td class ="text-center">
+              <button class="btn btn-sm btn-warning"
+              (click)="onUpdate(census._id)">Update</button>
+            </td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-primary"
+              (click)="onDelete(census._id)">Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
